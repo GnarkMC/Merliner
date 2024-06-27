@@ -1,0 +1,72 @@
+---
+import { Image } from "astro:assets";
+import "../styles/css.css";
+---
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Melani's Empire</title>
+        <meta name="theme-color" content="#0e1218" />
+        <meta property="og:type" content="website" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/png" href="/images/maria3.png" />
+        <link rel="stylesheet" href="../styles/css.css" />
+    </head>
+
+    <body>
+        <div class="content">
+            <header class="heading">
+                <Image
+                    id="img"
+                    src="/maria3.png"
+                    alt="Maria"
+                    width="72"
+                    height="72"
+                    loading="eager"
+                />
+                <h1>Melani's Empire</h1>
+                <h3 class="sub-text">...</h3>
+            </header>
+
+            <div class="ip-button">
+                <span class="ip-label">melani.io</span>
+            </div>
+
+            <hr class="divider" />
+
+            <main class="main-text">
+                <ul class="repeating-before">
+                    <li>
+                        Extreme difficulty! Are you up for the challenge? Try
+                        surviving in our custom difficulty that breaks even the
+                        bravest spirits. <a href="">See more...</a>
+                    </li>
+                    <li>...</li>
+                    <li>...</li>
+                    <li>...</li>
+                    <li>Learn more about us by checking out the handbook</li>
+                </ul>
+            </main>
+
+            <hr class="divider" />
+
+            <nav class="nav-wrapper">
+                <div class="navigation">
+                    <a href="https://store.melani.io" target="_blank">Store</a>
+                    <a
+                        href="https://discord.gg/Gmg6djUJAR"
+                        target="_blank"
+                        class="discord-button">Discord</a
+                    >
+                    <a href="https://codex.melani.io" target="_blank">Codex</a>
+                </div>
+            </nav>
+
+            <footer class="copyright">
+                MelaniCorp © 2024<br />Unaffiliated with Mojang AB.
+            </footer>
+        </div>
+    </body>
+</html>
